@@ -6,7 +6,8 @@ CONSTRUÇÃO DE PERSONAGEM:
  
   Cada um dos 5 status tem um modificador que é dado pelo valor real do status-5.
   Esse modificador é usado em testes para representar a habilidade do usuário.
-
+  
+  Os status são: Destreza, Agilidade, Inteligencia, Vida e Força.
 FIM
 
 TESTES DE CHANCE:
