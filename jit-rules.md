@@ -1,0 +1,184 @@
+Regras RPG just in time:
+
+CONSTRUÇÃO DE PERSONAGEM:
+>  Voce tem 5 status com 25 pontos para distribuição, min 3 max 8.
+>  E deve criar um background como base para seu personagem.
+> 
+>  Cada um dos 5 status tem um modificador que é dado pelo valor real do status-5.
+>  Esse modificador é usado em testes para representar a habilidade do usuário.
+>  
+>  Os status são: Destreza, Agilidade, Inteligencia, Vida e Força.
+FIM
+
+TESTES DE CHANCE:
+>  Para qualquer atividade que exija esforço do personagem, o mestre pode exigir um teste de chance.
+>  Um teste de chance falha se voce tirar em um d20 um valor menor do que a dificuldade do teste.
+>  
+>  O valor do dado é somado à:
+>   - Modificador relacionado ao teste, sendo esse modificador definido pelo mestre (ou pelo bom senso).
+>   - Karma.
+>   - Pontos de Sorte investidos. (explicado na sessão `sorte`)
+>   - Pontos de perícia dos personagens. (perícias são habilidades)
+>  
+>  O Modificador relacionado deve ser escolhido pelo mestre.
+>
+>  Quanto a testes com armas, já deixo aqui sugestões de quais modificadores devem ser aplicados:
+>   - Armas de impacto (maças, martelos e talvez machados): modificador de Força.
+>   - Armas de perfuração ( lanças, flechas, uma faca talvez ): modificador de Destreza.
+>   - Armas de corte (espadas, e outras laminas ): Use um dos dois acima, faça uma média deles, ou siga uma sugestão do mestre.
+>   - Armas mágicas: modificador de Inteligencia
+FIM
+
+TESTES DE ATRIBUTO:
+>  Para qualquer atividade que exija um esforço do personagem no qual um
+>  atributo é muito decisivo o mestre pode exigir um teste de atributo.
+>
+>  Testes de atributos também devem ser usados quando personagens disputarem força, carisma ou magia.
+>  Nestes testes a dificuldade é dada pelo oponente, assim quem obtiver mais pontos no teste vence.
+>  
+>  O dado utilizado em um teste de atributo pode variar segundo decisão do mestre.
+>  A variação deve ser entre um d4 à um d12, sendo o dado padrão um d8.
+>  (sugestão: use sempre o d8, o jogo fica mais simples)
+>
+>  Um teste de atributo falha se voce tirar um valor menor que a dificuldade do teste.
+>
+>  O valor do dado é somado à:
+>   - Modificador relacionado ao teste, sendo esse modificador definido pelo mestre (ou pelo bom senso).
+>   - Pontos de Sorte investidos. (explicado na sessão `sorte`)
+>   - Pontos de perícia dos personagens. (perícias são habilidades)
+>
+>   -- Modificar um teste de atributo com perícia ou habilidade custa 3 vezes mais.
+>      (mais pontos de habilidade e/ou mais pontos de sorte)
+>
+>  Alguns testes de atributos comuns:
+>   - Teste de levantamento de peso: d8 + modificador de Força.
+>   - Teste de resistencia a veneno: d8 + modificador de Constituição (Vida).
+>   - Teste de resistencia a magia: d8 + modificador de Inteligência.
+>   - Teste de esquiva: d8 + modificador de agilidade.
+>   - Teste de agarrar/defletir um objeto: d8 + modificador de Destreza.
+FIM TESTES DE ATRIBUTO:
+
+SORTE:
+>  Pontos de sorte são ganhos como recompensa para boas interpretações, o mestre deve usar isso para recompensar jogadores divertidos.
+>  // Lembrando que o mais importante sem dúvida no jogo é a diversão então pode até recompensar outras coisas, mas recompense o divertido acima de tudo!
+>  Os jogadores também devem receber uma quantidade básica de pontos de sorte de tempos em tempos, ex: ao fim de batalhas, ao inicio de um novo dia.
+>  Sugiro limitar o número máximo de pontos acumulados a 20, para incentivar os jogadores a usarem esses pontos.
+>  
+>  Estes pontos podem (como descrito acima) ser somados aos dados em teste de chance.
+>  Porém para realizar essa soma estes pontos devem ser gastados, e são portanto um recurso valioso.
+>  
+>  O custo de gastar sorte para aumentar o valor de um dado em um teste está sujeito a Gravidade 3.
+FIM
+
+DANO:
+>  O dano de cada personagem é um d6
+>  Cada tiro sofre um teste de chance:
+>   - Os testes para armas à distancia tem dificuldade 15.
+>   - Os testes para armas à curta distancia tem dificuldade 12 ou 13.
+>   (ambos podem sofrer com +2 ou -2 para expressar tiro dificil ou tiro fácil)
+>   (tiros de dificuldade extrema, ou facilidade extrema tem dificuldade decidida pelo mestre)
+>
+>Exemplos:
+>  Valor comum de dificuldade de tiros a distancia: 15
+>  Valor fácil de dificuldade de tiros a distancia: 13
+>
+>  Valor comum de dificuldade de ataque corporal: 12 ou 13
+>  Valor de ataque corporal em movimento (charge): 15
+>  Valor fácil de dificuldade de ataque corporal: 10 
+FIM
+
+DEFESA:
+>  Se um dano X passar no teste de chance esse dano será recebido pelo personagem.
+>  A primeira defesa é SEM EXCEÇÃO a agilidade do personagem.
+>  Em um turno um personagem com 5 de agilidade pode evitar 5 de dano. Dano esse não necessariamente de uma única origem.
+>  A segunda linha de defesa, caso o ataque passe pela agilidade são suas habilidades de defesa. (a distribuição de habilidades é explicada abaixo)
+>  A última linha é a vida, que é subtraida em 1 para cada 1 de dano que chegue até ela.
+>  
+>  Personagens com 0 de vida ainda estão de pé mas não podem atacar, e andam pouco (quase nada).
+>  Personagens com vida negativa estão inconcientes.
+>  Personagens inconcientes abandonados ao relento morrem (é o esperado né).
+>  Personagens com V pts de vida, se ficarem com -V-1 de vida, são considerados mortos.
+>
+>  Nota final: Um jogador pode optar por não usar a agilidade durante um turno caso queira proteger uma posição por algum motivo.
+FIM
+
+PONTOS DE HABILIDADES
+>  Skills, Talentos, e qualidades de Armas e Armaduras são todos definidos por pontos de Habilidades.
+>  Na prática os pontos de habilidades podem alterar todas as regras que descrevi até aqui, exceto os status, aumentando ou reduzindo algum valor.
+>  E é feito dessa forma para garantir um jogo muito imaginativo e tão completo quanto qualquer outro, só que com muita simplicidade.
+>  
+>  Pontos de Habilidade são ganhos á medida que se completa desafios mentais ou físicos!, O mestre deve julgar bem essas ocasiões e ponderar sua generosidade.
+>  Todas as aplicações de pontos de habilidades estão sujeitos à Gravidade, ao background do personagem, e ao bom senso do mestre!
+>  Se um mestre não gostar de uma aplicação de habilidade ele pode ou mandar o jogador mudar ela, ou penalizar o jogador com menos pontos de sorte.
+>  
+>  Aplicações de exemplo:
+>   - +1 de dano, custo 1
+>   - +1 de armadura, custo 1
+>   - +1 chance de crítico em testes com uma arma, custo 1
+>   
+>   - +1 d4 de dano (outra arma), custo 2    --> Se voce tiver duas mãos só pode bater com duas mãos! (voce pode inventar uma exceção!)
+>   - usar um d6  ao invés de um d4  custo 1
+>   - usar um d8  ao invés de um d6  custo 1
+>   - usar um d10 ao invés de um d8  custo 1
+>   - usar um d12 ao invés de um d10 custo 1
+>   
+>   - Curar 1 da própria vida do personagem em 1 turno custo 1
+>   - Curar 1 da vida de qualquer personagem em 1 turno custo 2
+>   
+>   - Gerar efeito em área para uma magia afetar +1 personagem por uso custo 3 (o efeito será divido entre os alvos).
+>   
+>   - Permitir o uso de uma habilidade duas vezes no mesmo turno custo 5.
+>   
+>   - Dobrar o efeito de qualquer habilidade dobra o custo, use essa idéia como parâmetro se alguém tentar dar uma de espertinho com as regras.
+>     Se a habilidade ficar boa de mais, o preço tem de subir proporcionalmente.
+>  
+>   - Em testes de atributos, ganhar um dado menor ou maior gasta-se 2H com G1.
+>
+>  Regras de Criação:
+>    Habilidades podem ser criadas a qualquer momento, mas não podem ser alteradas a durante batalhas, atividades, ou testes.
+>    Ou seja, isso evita que voce precise prever situações antes delas acontecerem,
+>    mas uma vez que voce já previu e investiu seus pontos a mordomia acaba, senão o role-playing fica estranho com seu personagem mudando durante a batalha.
+>    
+>    Novas habilidades podem ser de qualquer tipo, é fortemente aconselhável a negociação entre o mestre e o jogador para que o personagem
+>    fique exatamente como o jogador desejou quando ele imaginou o personagem, isso deixa o jogador mais feliz e disposto a interpretar o personagem.
+>    Em outras palavras, jogador, negocie com o mestre suas habilidades, mestre faça o mesmo. A palavra final é do mestre.
+>    Mestre use de criatividade e aconselho usar esse texto como base. Claro voce pode altera-lo para tornar as regras mais parecidas com o seu universo de RPG.
+>    Afinal se o universo for exatamente como voce desejou quando voce imaginou o mundo, voce fica mais feliz e mais disposto a mestrar :D (que nem com o jogador)
+>    
+>    Um último conselho, entenda bem o conceito de "Gravidade" que vou definir abaixo. E aplique-o em dosagens adequadas para as habilidades.
+>
+FIM
+
+GRAVIDADE
+>  Gravidade é o nome que usarei para dizer 'não vá muito longe do chão' ou melhor da realidade.
+>  Ex: 
+>    - +1 de crítico, custo 1 de habilidade.
+>      +2 = custo 2
+>      +3 = custo 3
+>      Agora +4, começa a ficar apelão. aumente o custo disso ex:
+>      +4 = custo 3+2 = 5
+>  
+>  Assim vou definir gravidade de peso 3 como uma habilidade cujo custo é incrementado a cada 3 pontos que é o caso do exemplo acima.
+>  Assim se voce pensar nessa regra, o custo para um critico +6 = 1 + 1 + 1 + 2 + 2 + 2, e para +7 = 1 + 1 + 1 + 2 + 2 + 2 + 3
+>  
+>  Para a maioria dos casos que imaginei um peso que me pareceu adequado de gravidade é 3, mas se achar adequado use pesos menores ou maiores.
+FIM 
+
+KARMA:
+
+>  Pontos de Karma:
+>   - Para cada ponto a mais que 25 que voce distribuir voce perde 1 de karma.
+>   - Para cada ponto a menos que 25 que voce distribuir voce ganha 1 de karma.
+>   - Para cada ponto que voce colocar acima de 8 em um único status voce perde 1 de karma.
+>   - Para cada ponto que voce colocar abaixo de 3 em um único status voce ganha 1 de karma.
+>   Todos estes efeitos de karma estão sujeitos a Gravidade 1.
+
+FIM
+
+MODIFICADORES:
+
+>  Cada um dos 5 status tem um modificador que é dado pelo valor real do status-5.
+>  Esse modificador é usado em testes para representar a habilidade do usuário.
+
+FIM
+
