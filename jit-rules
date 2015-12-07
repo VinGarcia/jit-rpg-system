@@ -158,7 +158,7 @@ GRAVIDADE
       Agora +4, começa a ficar apelão. aumente o custo disso ex:
       +4 = custo 3+2 = 5
   
-  Assim vou definir gravidade de peso 3 como habilidade que é incrementada a cada 3 pontos que é o caso do exemplo acima.
+  Assim vou definir gravidade de peso 3 como uma habilidade cujo custo é incrementado a cada 3 pontos que é o caso do exemplo acima.
   Assim se voce pensar nessa regra, o custo para um critico +6 = 1 + 1 + 1 + 2 + 2 + 2, e para +7 = 1 + 1 + 1 + 2 + 2 + 2 + 3
   
   Para a maioria dos casos que imaginei um peso que me pareceu adequado de gravidade é 3, mas se achar adequado use pesos menores ou maiores.
