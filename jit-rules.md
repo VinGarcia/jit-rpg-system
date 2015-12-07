@@ -8,7 +8,6 @@ CONSTRUÇÃO DE PERSONAGEM:
 >  Esse modificador é usado em testes para representar a habilidade do usuário.
 >  
 >  Os status são: Destreza, Agilidade, Inteligencia, Vida e Força.
-FIM
 
 TESTES DE CHANCE:
 >  Para qualquer atividade que exija esforço do personagem, o mestre pode exigir um teste de chance.
@@ -27,7 +26,6 @@ TESTES DE CHANCE:
 >   - Armas de perfuração ( lanças, flechas, uma faca talvez ): modificador de Destreza.
 >   - Armas de corte (espadas, e outras laminas ): Use um dos dois acima, faça uma média deles, ou siga uma sugestão do mestre.
 >   - Armas mágicas: modificador de Inteligencia
-FIM
 
 TESTES DE ATRIBUTO:
 >  Para qualquer atividade que exija um esforço do personagem no qual um
@@ -56,7 +54,6 @@ TESTES DE ATRIBUTO:
 >   - Teste de resistencia a magia: d8 + modificador de Inteligência.
 >   - Teste de esquiva: d8 + modificador de agilidade.
 >   - Teste de agarrar/defletir um objeto: d8 + modificador de Destreza.
-FIM TESTES DE ATRIBUTO:
 
 SORTE:
 >  Pontos de sorte são ganhos como recompensa para boas interpretações, o mestre deve usar isso para recompensar jogadores divertidos.
@@ -68,7 +65,6 @@ SORTE:
 >  Porém para realizar essa soma estes pontos devem ser gastados, e são portanto um recurso valioso.
 >  
 >  O custo de gastar sorte para aumentar o valor de um dado em um teste está sujeito a Gravidade 3.
-FIM
 
 DANO:
 >  O dano de cada personagem é um d6
@@ -85,7 +81,6 @@ DANO:
 >  Valor comum de dificuldade de ataque corporal: 12 ou 13
 >  Valor de ataque corporal em movimento (charge): 15
 >  Valor fácil de dificuldade de ataque corporal: 10 
-FIM
 
 DEFESA:
 >  Se um dano X passar no teste de chance esse dano será recebido pelo personagem.
@@ -100,7 +95,6 @@ DEFESA:
 >  Personagens com V pts de vida, se ficarem com -V-1 de vida, são considerados mortos.
 >
 >  Nota final: Um jogador pode optar por não usar a agilidade durante um turno caso queira proteger uma posição por algum motivo.
-FIM
 
 PONTOS DE HABILIDADES
 >  Skills, Talentos, e qualidades de Armas e Armaduras são todos definidos por pontos de Habilidades.
@@ -146,8 +140,6 @@ PONTOS DE HABILIDADES
 >    Afinal se o universo for exatamente como voce desejou quando voce imaginou o mundo, voce fica mais feliz e mais disposto a mestrar :D (que nem com o jogador)
 >    
 >    Um último conselho, entenda bem o conceito de "Gravidade" que vou definir abaixo. E aplique-o em dosagens adequadas para as habilidades.
->
-FIM
 
 GRAVIDADE
 >  Gravidade é o nome que usarei para dizer 'não vá muito longe do chão' ou melhor da realidade.
@@ -162,7 +154,6 @@ GRAVIDADE
 >  Assim se voce pensar nessa regra, o custo para um critico +6 = 1 + 1 + 1 + 2 + 2 + 2, e para +7 = 1 + 1 + 1 + 2 + 2 + 2 + 3
 >  
 >  Para a maioria dos casos que imaginei um peso que me pareceu adequado de gravidade é 3, mas se achar adequado use pesos menores ou maiores.
-FIM 
 
 KARMA:
 
@@ -173,12 +164,10 @@ KARMA:
 >   - Para cada ponto que voce colocar abaixo de 3 em um único status voce ganha 1 de karma.
 >   Todos estes efeitos de karma estão sujeitos a Gravidade 1.
 
-FIM
 
 MODIFICADORES:
 
 >  Cada um dos 5 status tem um modificador que é dado pelo valor real do status-5.
 >  Esse modificador é usado em testes para representar a habilidade do usuário.
 
-FIM
 
