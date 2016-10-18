@@ -21,12 +21,12 @@ CHANCE TESTS:
 
   The dice value is added to:
    - The modifier related to the test (the specific modifier being defined by the game master)
-   - Karma.
-   - Lucky Points spent. (explained on the `Lucky` section)
-   - Any skill bonus that applies to the test. (explained on the `Skills` section)
+   - Any Karma effects (explained on the `Karma` section).
+   - Any Lucky Points spent. (explained on the `Lucky` section)
+   - Any Skill bonus that applies to the test. (explained on the `Skills` section)
   
-  I suggest the use of the Dexterity modifier for hit Chance Tests.
-  But the master is free to choose his own.
+  For Attack tests, I advise using the Dexterity modifier,
+  since this is why this status exists. For other tests you name it.
 END
 
 ATTRIBUTE TESTS:
