@@ -1,177 +1,218 @@
-Regras RPG just in time:
+Just In Time RPG Rules:
 
-CONSTRUÇÃO DE PERSONAGEM:
-  Voce tem 5 status com 25 pontos para distribuição, min 3 max 8.
-  E deve criar um background como base para seu personagem.
+CHARACTER BUILDING:
+  You have 5 status with 25 points to distribute, min 3 - max 8 each.
+  You must also create a background story as base for your character.
  
-  Cada um dos 5 status tem um modificador que é dado pelo valor real do status-5.
-  Esse modificador é usado em testes para representar a habilidade do usuário.
+  Each of the 5 status has a modified given by as `%-5` where `%` is the status value.
+  This modifier is used to measure the character fitness on different tasks.
   
-  Os status são: Destreza, Agilidade, Inteligencia, Vida e Força.
-FIM
+  The status are: Dexterity, Agility, Intelligence, Life and Strength.
 
-TESTES DE CHANCE:
-  Para qualquer atividade que exija esforço do personagem, o mestre pode exigir um teste de chance.
-  Um teste de chance falha se voce tirar em um d20 um valor menor do que a dificuldade do teste.
-  
-  O valor do dado é somado à:
-   - Modificador relacionado ao teste, sendo esse modificador definido pelo mestre (ou pelo bom senso).
+  Some special values are tied to these stats:
+   - Dodge Points: 1/turn for each Agility point.
+   - Mana Points: 1/turn for each Inteligence point.
+   - Hit Points: 2 for each Life point.
+END
+
+CHANCE TESTS:
+  For any task that requires some effort from the character, the master may require a Chance Test.
+  A Chance Test fails if you get on a d20 dice a value lower than the test difficulty.
+
+  The dice value is added to:
+   - The modifier related to the test (the specific modifier being defined by the game master)
    - Karma.
-   - Pontos de Sorte investidos. (explicado na sessão `sorte`)
-   - Pontos de perícia dos personagens. (perícias são habilidades)
+   - Lucky Points spent. (explained on the `Lucky` section)
+   - Any skill bonus that applies to the test. (explained on the `Skills` section)
   
-  O Modificador relacionado deve ser escolhido pelo mestre.
+  I suggest the use of the Dexterity modifier for hit Chance Tests.
+  But the master is free to choose his own.
+END
 
-  Quanto a testes com armas, já deixo aqui sugestões de quais modificadores devem ser aplicados:
-   - Armas de impacto (maças, martelos e talvez machados): modificador de Força.
-   - Armas de perfuração ( lanças, flechas, uma faca talvez ): modificador de Destreza.
-   - Armas de corte (espadas, e outras laminas ): Use um dos dois acima, faça uma média deles, ou siga uma sugestão do mestre.
-   - Armas mágicas: modificador de Inteligencia
-FIM
+ATTRIBUTE TESTS:
+  For any activity that requires some effort of the character and where
+  one specific attribute is specially decisive, the master may require an attribute test.
 
-TESTES DE ATRIBUTO:
-  Para qualquer atividade que exija um esforço do personagem no qual um
-  atributo é muito decisivo o mestre pode exigir um teste de atributo.
+  Attribute tests should also be used when characters dispute strength, charisma or magic power.
+  In these tests the difficulty is given by the oponnent, thus wins the one with the best score on the test.
 
-  Testes de atributos também devem ser usados quando personagens disputarem força, carisma ou magia.
-  Nestes testes a dificuldade é dada pelo oponente, assim quem obtiver mais pontos no teste vence.
+  The dice used in an attribute test may vary by the master's decision.
+  The valid values are: d4, d6, d8, d10 and a d12.
+  (Suggestion: use always a d8 as to simplify the gameplay)
+
+  An attribute test fails if you score less than the test difficulty.
+
+  The given value is added to:
+   - The respective attribute modifier.
+   - Lucky Points spent. (explained on the `Lucky` section)
+   - Any skill bonus that applies to the test. (explained on the `Skills` section)
+
+   -- Skills that modify attribute tests should cost 3 times more than Chance Tests.
+      (the same apply for Lucky points)
+
+  Some common attribute tests:
+   - Weightlifting: d8 + Strength modifier.
+   - Poison resistance: d8 + Life modifier.
+   - Magic resistance: d8 + Intelligence modifier.
+   - Dodge an object: d8 + Agility modifier.
+   - Grab/deflect a moving object: d8 + Dexterity modifier.
+END ATTRIBUTE TESTS
+
+LUCKY:
+  Lucky points are earned for making good role play, the master should use it as reward for fun players.
+  // This points are for the master to bargain with, but always use it to promote funny role-playing.
+
+  The players should also get some lucky points from time to time, e.g. after a day, or after an important battle.
+  I suggest a maximum storage capacity of lucky points (e.g. 10-20) so the players are encouraged to use them.
+
+  These points (as described above) can be added to dices outcomes on `chance` and `attribute` tests.
+  To do that the players must spend these lucky points making them a valuable resource.
   
-  O dado utilizado em um teste de atributo pode variar segundo decisão do mestre.
-  A variação deve ser entre um d4 à um d12, sendo o dado padrão um d8.
-  (sugestão: use sempre o d8, o jogo fica mais simples)
+  Spend Lucky points is subject to Weight 3. (explained on `Weight` section)
+END
 
-  Um teste de atributo falha se voce tirar um valor menor que a dificuldade do teste.
+DAMAGE:
+  Each character's damage defaults to a d6.
 
-  O valor do dado é somado à:
-   - Modificador relacionado ao teste, sendo esse modificador definido pelo mestre (ou pelo bom senso).
-   - Pontos de Sorte investidos. (explicado na sessão `sorte`)
-   - Pontos de perícia dos personagens. (perícias são habilidades)
+  Each hit should only happen after a Chance Test:
+   - Long ranged tests should have a standard difficulty of 15.
+   - Short ranged tests should have a standard difficulty of 12 or 13.
+   (both may vary -2 or +2 to express an easy or hard target.
+   (extremely easy or hard tests difficulty is up to the master to decide)
 
-   -- Modificar um teste de atributo com perícia ou habilidade custa 3 vezes mais.
-      (mais pontos de habilidade e/ou mais pontos de sorte)
+Examples:
+  Hit a fast moving target is a bow: 13 (15 - 2)
+  Hit an opponent with a club while jumping from a cliff: 15 (13 + 2)
+  Hit a paralized opponent with a mace: 10 (12 - 2)
 
-  Alguns testes de atributos comuns:
-   - Teste de levantamento de peso: d8 + modificador de Força.
-   - Teste de resistencia a veneno: d8 + modificador de Constituição (Vida).
-   - Teste de resistencia a magia: d8 + modificador de Inteligência.
-   - Teste de esquiva: d8 + modificador de agilidade.
-   - Teste de agarrar/defletir um objeto: d8 + modificador de Destreza.
-FIM TESTES DE ATRIBUTO:
+  Hit a flying dragon in the eye with a dagger: 35 (15 + wtf)
+END
 
-SORTE:
-  Pontos de sorte são ganhos como recompensa para boas interpretações, o mestre deve usar isso para recompensar jogadores divertidos.
-  // Lembrando que o mais importante sem dúvida no jogo é a diversão então pode até recompensar outras coisas, mas recompense o divertido acima de tudo!
-  Os jogadores também devem receber uma quantidade básica de pontos de sorte de tempos em tempos, ex: ao fim de batalhas, ao inicio de um novo dia.
-  Sugiro limitar o número máximo de pontos acumulados a 20, para incentivar os jogadores a usarem esses pontos.
+DEFENSE:
+  If a given attack passes the Chance Test it will hit the character defense.
+  The first line of defense is the character's dodge points (1 for each Agility point)
+  In a single turn a character with 5 Agility can dodge up to 5 points of damage. Not necessarily from the same source.
+  The second line of defense, are any effects of defensive skills. (explained in the `Skills` section)
+  The last defensive line is the character Hit Points (given by the Life attribute)
   
-  Estes pontos podem (como descrito acima) ser somados aos dados em teste de chance.
-  Porém para realizar essa soma estes pontos devem ser gastados, e são portanto um recurso valioso.
+  Characters with 0 HP are still awake but, can't attack and walk slowly (crawling).
+  Characters with HP < 0 are unconscious.
+  Characters abandoned in an open field while unconscious should be expected to die.
+  Characters with N Life points will be considered dead if they hit `-(N + 1)` HP.
+
+  Notes:
+   - To avoid dodging a character should have a good role-play excuse,
+     since it would not be natural for a human do to so.
+     (if he wants to do that often, he should learn a skill to do so)
+END
+
+SKILL POINTS
+  The skill points rule define characters abilities, talents and proficiencies.
+  They should represent any aspect of the universe not handled by the other rules.
+  This design allows the game to be as complex as the game master wants and still be fun.
+
+  All skill candidates should be reasoned in terms of:
+   1. The character background (a character should only have skills that make sense on his background story)
+   2. The master's common sense and good judgement.
+   3. The `Weight` rule explained in the next section.
   
-  O custo de gastar sorte para aumentar o valor de um dado em um teste está sujeito a Gravidade 3.
-FIM
+  Skill points represent the growth of the character, and should be earned after completing challenges.
+  Its up to the gamemaster to create the rules of any new skill and make it fair.
 
-DANO:
-  O dano de cada personagem é um d6
-  Cada tiro sofre um teste de chance:
-   - Os testes para armas à distancia tem dificuldade 15.
-   - Os testes para armas à curta distancia tem dificuldade 12 ou 13.
-   (ambos podem sofrer com +2 ou -2 para expressar tiro dificil ou tiro fácil)
-   (tiros de dificuldade extrema, ou facilidade extrema tem dificuldade decidida pelo mestre)
-
-Exemplos:
-  Valor comum de dificuldade de tiros a distancia: 15
-  Valor fácil de dificuldade de tiros a distancia: 13
-
-  Valor comum de dificuldade de ataque corporal: 12 ou 13
-  Valor de ataque corporal em movimento (charge): 15
-  Valor fácil de dificuldade de ataque corporal: 10 
-FIM
-
-DEFESA:
-  Se um dano X passar no teste de chance esse dano será recebido pelo personagem.
-  A primeira defesa é SEM EXCEÇÃO a agilidade do personagem.
-  Em um turno um personagem com 5 de agilidade pode evitar 5 de dano. Dano esse não necessariamente de uma única origem.
-  A segunda linha de defesa, caso o ataque passe pela agilidade são suas habilidades de defesa. (a distribuição de habilidades é explicada abaixo)
-  A última linha é a vida, que é subtraida em 1 para cada 1 de dano que chegue até ela.
-  
-  Personagens com 0 de vida ainda estão de pé mas não podem atacar, e andam pouco (quase nada).
-  Personagens com vida negativa estão inconcientes.
-  Personagens inconcientes abandonados ao relento morrem (é o esperado né).
-  Personagens com V pts de vida, se ficarem com -V-1 de vida, são considerados mortos.
-
-  Nota final: Um jogador pode optar por não usar a agilidade durante um turno caso queira proteger uma posição por algum motivo.
-FIM
-
-PONTOS DE HABILIDADES
-  Skills, Talentos, e qualidades de Armas e Armaduras são todos definidos por pontos de Habilidades.
-  Na prática os pontos de habilidades podem alterar todas as regras que descrevi até aqui, exceto os status, aumentando ou reduzindo algum valor.
-  E é feito dessa forma para garantir um jogo muito imaginativo e tão completo quanto qualquer outro, só que com muita simplicidade.
-  
-  Pontos de Habilidade são ganhos á medida que se completa desafios mentais ou físicos!, O mestre deve julgar bem essas ocasiões e ponderar sua generosidade.
-  Todas as aplicações de pontos de habilidades estão sujeitos à Gravidade, ao background do personagem, e ao bom senso do mestre!
-  Se um mestre não gostar de uma aplicação de habilidade ele pode ou mandar o jogador mudar ela, ou penalizar o jogador com menos pontos de sorte.
-  
-  Aplicações de exemplo:
-   - +1 de dano, custo 1
-   - +1 de armadura, custo 1
-   - +1 chance de crítico em testes com uma arma, custo 1
+  Base models for Designing Skills:
+   - +1 damage on each attack, cost 1 SP
+   - +1 armor on each defense, cost 1 SP
+   - +1 critical hit chance on `Chance Tests` with a given weapon, cost 1 SP
    
-   - +1 d4 de dano (outra arma), custo 2    --> Se voce tiver duas mãos só pode bater com duas mãos! (voce pode inventar uma exceção!)
-   - usar um d6  ao invés de um d4  custo 1
-   - usar um d8  ao invés de um d6  custo 1
-   - usar um d10 ao invés de um d8  custo 1
-   - usar um d12 ao invés de um d10 custo 1
+   - +1 d4 of damage (as a second weapon), cost 2 SP (each dice represents 1 weapon, so at most 2 at the same time)
+   - Upgrade weapon from a d4 to a d6, cost 1 SP
+   - Upgrade weapon from a d6 to a d8, cost 1 SP
+   - Upgrade weapon from a d8 to a d10, cost 1 SP
+   - Upgrade weapon from a d10 to a d12, cost 1 SP
    
-   - Curar 1 da própria vida do personagem em 1 turno custo 1
-   - Curar 1 da vida de qualquer personagem em 1 turno custo 2
+   - Spend a turn to heal 1 of own's HP, cost 1 SP
+   - Spend a turn to heal 1 HP from any character, cost 2 SP
    
-   - Gerar efeito em área para uma magia afetar +1 personagem por uso custo 3 (o efeito será divido entre os alvos).
+   - Upgrade a skill to target up to +1 adjacent characters, cost 3 SP (the effect being split between targets)
    
-   - Permitir o uso de uma habilidade duas vezes no mesmo turno custo 5.
-   
-   - Dobrar o efeito de qualquer habilidade dobra o custo, use essa idéia como parâmetro se alguém tentar dar uma de espertinho com as regras.
-     Se a habilidade ficar boa de mais, o preço tem de subir proporcionalmente.
-  
-   - Em testes de atributos, ganhar um dado menor ou maior gasta-se 2H com G1.
+   - Upgrade a skill to work twice in the same turn: cost 5 SP
 
-  Regras de Criação:
-    Habilidades podem ser criadas a qualquer momento, mas não podem ser alteradas a durante batalhas, atividades, ou testes.
-    Ou seja, isso evita que voce precise prever situações antes delas acontecerem,
-    mas uma vez que voce já previu e investiu seus pontos a mordomia acaba, senão o role-playing fica estranho com seu personagem mudando durante a batalha.
-    
-    Novas habilidades podem ser de qualquer tipo, é fortemente aconselhável a negociação entre o mestre e o jogador para que o personagem
-    fique exatamente como o jogador desejou quando ele imaginou o personagem, isso deixa o jogador mais feliz e disposto a interpretar o personagem.
-    Em outras palavras, jogador, negocie com o mestre suas habilidades, mestre faça o mesmo. A palavra final é do mestre.
-    Mestre use de criatividade e aconselho usar esse texto como base. Claro voce pode altera-lo para tornar as regras mais parecidas com o seu universo de RPG.
-    Afinal se o universo for exatamente como voce desejou quando voce imaginou o mundo, voce fica mais feliz e mais disposto a mestrar :D (que nem com o jogador)
-    
-    Um último conselho, entenda bem o conceito de "Gravidade" que vou definir abaixo. E aplique-o em dosagens adequadas para as habilidades.
+   To upgrade any skill you should also increase its price proportionally.
+   If the players wants something overpower make an overpriced skill, so to always keep balance.
+   
+  Just In Time Creation rules:
+    - A player should `declare` some basic skills at the beginning of the game.
+    - A player can `declare` a previously non existing skill to exist at --anytime--,
+      as long as he has enough SP and it makes perfect sense in the role playing of his character.
+    - A player can `learn` a new skill or `upgrade` an existing skill after an event or a battle,
+      As long as he have enought SP and he can link it with role play consistently.
 
-FIM
+    Examples:
+    - A farmer boy cannot `declare` he is good at using crossbows, but he can learn it during gameplay.
+    - At the same time a hunter can `declare` he knows how to light a fire in the woods, it makes perfect sense for him.
+    - One cannot declare he is immune to poison, if on the last battle he was poisoned, since it would break game play.
+    - One cannot upgrade a skill in the middle of battle, but he can do it just after that.
 
-GRAVIDADE
-  Gravidade é o nome que usarei para dizer 'não vá muito longe do chão' ou melhor da realidade.
-  Ex: 
-    - +1 de crítico, custo 1 de habilidade.
-      +2 = custo 2
-      +3 = custo 3
-      Agora +4, começa a ficar apelão. aumente o custo disso ex:
-      +4 = custo 3+2 = 5
+  New skills can be of any type, it is strongly encouraged the negociation of these skills between the game master and the players,
+  so that the characters come out exactly how the player wished for when he designed his character. This makes the player happier
+  and more willing to play his character.
+
+  In other words creating a skill is a job for 2, but the final word is always from the game master.
+
+  The game master should be flexible and creative, this text is to be used as base, but be free to alter it.
+  After all if the system is exactly how you wished for you will be happier and more willing to play as game master.
+
+  As a final advice, you should understand well the "Weight" concept described below.
+  And use it in appropriate dosages for each new skill.
+END
+
+WEIGHT
+  Weight is a rule created to facilitated game balancing.
+  Any skill if improved too much will cause unforseen effects on the game.
+  To prevent those effects they should all be subject to the Weight effect:
   
-  Assim vou definir gravidade de peso 3 como uma habilidade cujo custo é incrementado a cada 3 pontos que é o caso do exemplo acima.
-  Assim se voce pensar nessa regra, o custo para um critico +6 = 1 + 1 + 1 + 2 + 2 + 2, e para +7 = 1 + 1 + 1 + 2 + 2 + 2 + 3
+  E.g.: 
+    - +1 critical chance, costs 1 SP.
+    - +2 costs 2 SP (1 + 1)
+    - +3 costs 3 SP (2 + 1).
+      From +4 on ward it starts to get overpower, so the price should be increased a little:
+    - +4 costs: 5 (3 + 2)
+    - +5 costs: 7 (5 + 2)
+    - +6 costs: 9 (7 + 2)
+      Now it is getting abnormal for a normal human being, lets make it even more expensive:
+    - +7 costs: 12 (9 + 3)
+      So to upgrade from +2 to +3 I would spend only 1 SP,
+      to do the same from +6 to +7 I would spend 3 SP.
   
-  Para a maioria dos casos que imaginei um peso que me pareceu adequado de gravidade é 3, mas se achar adequado use pesos menores ou maiores.
-FIM 
+  Therefore the Weight effect of N or `WN` for short increases the `upgrade` cost by 1 every N `upgrades`.
+  On the example above the Weight used was W3, and it is a fairly good Weight to use as default.
+  
+  For most cases including all the examples on the `Skill Points` section I suggest the use of W3.
+  If you find it more appropriate to use a heavier or lighter Weight be free to do it.
+END 
 
 KARMA:
 
-  Pontos de Karma:
-   - Para cada ponto a mais que 25 que voce distribuir voce perde 1 de karma.
-   - Para cada ponto a menos que 25 que voce distribuir voce ganha 1 de karma.
-   - Para cada ponto que voce colocar acima de 8 em um único status voce perde 1 de karma.
-   - Para cada ponto que voce colocar abaixo de 3 em um único status voce ganha 1 de karma.
-   Todos estes efeitos de karma estão sujeitos a Gravidade 1.
+  Some rules should not be easy to change. To change them would
+  provide a player with a greatly unfair advantage or disadvantage.
+
+  To fix this problem the Karma Points system allow a player to
+  exchange some advantages for some proportional disadvantages:
+
+  Karma points:
+   - Have +1 status point to use costs 1 KP
+   - Have -1 status point to use provides 1 KP
+   - Having more than 8 status points on a single attribute costs 1 KP
+   - Having less than 3 status points on a single attribute provides 1 KP
+   All these rules are subject to Weight 1
+
+  Examples:
+   - A player wants to be an incredibly strong but dumb beserker;
+     He could have 9 points in Strength, and only 2 in Inteligence.
+   - A player wants a character that has 4 hands, so he can use a total of 4 weapons.
+     A gamemaster could require one KP for each extra arm.
+   - A player wants to be a hobbit, with less HP than normal, it is fair that
+     he can sell that 2 HP for 1 Karma.
 
 FIM
 
