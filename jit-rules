@@ -4,7 +4,7 @@ CHARACTER BUILDING:
   You have 5 status with 25 points to distribute, min 3 - max 8 each.
   You must also create a background story as base for your character.
  
-  Each of the 5 status has a modified given by as `%-5` where `%` is the status value.
+  Each of the 5 status has a modified given as `%-5` where `%` is the status value.
   This modifier is used to measure the character fitness on different tasks.
   
   The status are: Dexterity, Agility, Intelligence, Life and Strength.
