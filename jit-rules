@@ -42,7 +42,7 @@ ATTRIBUTE TESTS:
 
   An attribute test fails if you score less than the test difficulty.
 
-  The given value is added to:
+  The dice outcome is added to:
    - The respective attribute modifier.
    - Lucky Points spent. (explained on the `Lucky` section)
    - Any skill bonus that applies to the test. (explained on the `Skills` section)
