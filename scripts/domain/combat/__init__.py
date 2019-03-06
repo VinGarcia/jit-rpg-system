@@ -24,6 +24,9 @@ def fight(*teams):
     order = sorted(players.values(), key=lambda x: x['initiative'])
     while True:
         for player in order:
+            if player['char'].stats['disabled']:
+                continue
+
             player['char'].restore('balance')
             print('%s`s turn!\n' % player['char'].name)
             print('Player:', player['char'])
