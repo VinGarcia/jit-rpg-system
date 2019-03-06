@@ -9,6 +9,6 @@ with open('sample.json') as file:
     players = json.load(file)
 
 players = [Character(**p) for p in players]
-teams = [list(members) for name, members in groupby(players, key=lambda p: p.team)]
+teams = {name: list(members) for name, members in groupby(players, key=lambda p: p.team)}
 
-fight(*teams)
+fight(teams)

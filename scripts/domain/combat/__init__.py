@@ -1,10 +1,10 @@
 
 import random
 
-def fight(*teams):
+def fight(teams):
     players = {}
-    for team in teams:
-        oponents = [p for t in teams if t != team for p in t]
+    for team in teams.values():
+        oponents = [p for t in teams.values() if t != team for p in t]
         for char in team:
             players[char.name] = {
                 'char': char,
@@ -61,7 +61,7 @@ def fight(*teams):
 
 def fightIsOver(teams):
     teamsAlive = 0
-    for team in teams:
+    for team in teams.values():
         for char in team:
             if not char.stats['disabled']:
                 teamsAlive += 1
@@ -73,7 +73,7 @@ def fightIsOver(teams):
 # Actions:
 #
 
-def autoCmd(player, players, teams, args):
+def autoCmd(player, players, teams, _args):
     oponent = random.choice(
         [op for op in player['oponents'] if not op.stats['disabled']]
     )
@@ -83,7 +83,7 @@ def autoCmd(player, players, teams, args):
     return 'ok'
 
 
-def hitCmd(player, players, teams, args):
+def hitCmd(player, players, _teams, args):
     if len(args) < 1 or type(args[0]) != str or args[0] not in players:
         raise Exception('Invalid or missing target name for `hit` command: %s' % args)
     oponent = players[args[0]]['char']
@@ -107,13 +107,12 @@ def hitCmd(player, players, teams, args):
 
 def overviewCmd(player, _players, teams, _args):
     print('\nTeams:')
-    for team in teams:
-        print(team)
+    print(teams)
     print()
 
     return 'retry'
 
 def runCmd(player, _players, teams, _args):
-    list(teams).remove(player['team'])
+    teams.pop(player.team)
 
     return 'exit'
