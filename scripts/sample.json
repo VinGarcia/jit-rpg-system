@@ -1,19 +1,19 @@
 [
   {
     "name": "Fox",
-    "weapons": [2, 2],
+    "weapons": ["1d6", "1d6"],
     "armor": 2,
     "isPlayer": true,
     "team": "good guys"
   },
   {
     "name": "Zim",
-    "weapons": [1, 2],
+    "weapons": ["1d4", "1d6"],
     "team": "bad guys"
   },
   {
     "name": "Zoid",
-    "weapons": [1, 2],
+    "weapons": ["1d4", "1d6"],
     "team": "bad guys"
   }
 ]

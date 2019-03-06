@@ -1,6 +1,7 @@
 
 import random
 import json
+import re
 
 class Character:
     attrNames = [
@@ -15,14 +16,14 @@ class Character:
         self.name = name
         self.isPlayer = isPlayer
         self.attrs = Character.distributeAttributes(kw, 25)
-        self.weapons = [2+2*x for x in (weapons or [1]) if x in range(1, 5)]
+        self.weapons = [w for wstr in (weapons or ['1d4']) for w in Character._parseWeapon(wstr)]
         self.armor = armor
         self.stats = self.defaultStats()
         self.team = kw.pop('team', 'players' if isPlayer else 'monsters')
 
     def attack(self, dices=[]):
         if self.stats['disabled']:
-            return { 'hit_chance': 0, 'dmg': 0 }
+            return {'hit_chance': 0, 'dmg': 0}
 
         if dices:
             if len(dices[1:]) != len(self.weapons):
@@ -43,7 +44,7 @@ class Character:
         for maxDmg in self.weapons:
             dmg += random.randint(1, maxDmg)
 
-        return { 'hit_chance': hit, 'dmg': dmg }
+        return {'hit_chance': hit, 'dmg': dmg}
 
     def defend(self, dmg, dodge=True):
         if dodge:
@@ -113,6 +114,20 @@ class Character:
                 missing.remove(key)
 
         return attrs
+
+    @staticmethod
+    def _parseWeapon(s):
+        match = re.match('(\d*)d(\d+)', s)
+        if not match:
+            raise Exception("invalid weapon received: '%s'" % s)
+
+        numDices = int(match.group(1) or '1')
+        dice = int(match.group(2))
+
+        if dice > 12 or dice < 4 or dice % 2 != 0:
+            raise Exception("invalid dice for use as a weapon: '%s'" % s)
+
+        return numDices * [dice]
 
     def __repr__(self):
         return str(self)
