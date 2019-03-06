@@ -1,6 +1,6 @@
 [
   {
-    "name": "Fox",
+    "name": "Hero",
     "weapons": ["1d6", "1d6"],
     "armor": 2,
     "isPlayer": true,
