@@ -2,8 +2,6 @@
 import random
 import json
 
-from combat import fight
-
 class Character:
     attrNames = [
         'dex',
@@ -119,18 +117,3 @@ class Character:
             [weaponsStr[w] for w in self.weapons],
             self.stats,
         )
-
-monster = Character(
-    name='Zim',
-    weapons=[1, 2],
-)
-# print('Monster:', monster)
-
-player = Character(
-    name='Fox',
-    weapons=[2, 2],
-    isPlayer=True,
-)
-# print('Player:', player)
-
-fight([player], [monster])
