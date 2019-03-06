@@ -20,9 +20,23 @@ class Character:
         self.stats = self.defaultStats()
         self.team = kw.pop('team', 'players' if isPlayer else 'monsters')
 
-    def attack(self):
+    def attack(self, dices=[]):
         if self.stats['disabled']:
             return { 'hit_chance': 0, 'dmg': 0 }
+
+        if dices:
+            if len(dices[1:]) != len(self.weapons):
+                raise Exception(
+                    'unexpected number of dices (%s), expected %s' % (
+                        dices,
+                        ['1d%s' % w for w in [20] + self.weapons],
+                    )
+                )
+
+            return {
+                'hit_chance': int(dices[0]),
+                'dmg': sum([int(d) for d in dices[1:]]),
+            }
 
         hit = random.randint(1,20)
         dmg = 0

@@ -36,7 +36,7 @@ def fight(teams):
                 if player['char'].isPlayer:
                     cmd = input(
                         '\nCommands:\n' +
-                        '  hit [Name]\n' +
+                        '  hit <name> [dices outcome]\n' +
                         '  overview\n' +
                         '  run\n\n'
                     )
@@ -89,7 +89,7 @@ def hitCmd(player, players, _teams, args):
     oponent = players[args[0]]['char']
     print('Oponent chosen:', oponent)
 
-    attack = player['char'].attack()
+    attack = player['char'].attack(args[1:])
     print('\nAttack:', attack)
     if attack['hit_chance'] >= 12:
         result = oponent.defend(attack['dmg'])
