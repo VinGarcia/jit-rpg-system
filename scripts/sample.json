@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Fox",
+    "weapons": [2, 2],
+    "isPlayer": true,
+    "team": "good guys"
+  },
+  {
+    "name": "Zim",
+    "weapons": [1, 2],
+    "team": "bad guys"
+  }
+]

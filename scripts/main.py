@@ -1,16 +1,14 @@
 
+import json
+from itertools import groupby
+
 from domain import Character
 from domain.combat import fight
 
-monster = Character(
-    name='Zim',
-    weapons=[1, 2],
-)
+with open('sample.json') as file:
+    players = json.load(file)
 
-player = Character(
-    name='Fox',
-    weapons=[2, 2],
-    isPlayer=True,
-)
+players = [Character(**p) for p in players]
+teams = [list(t[1]) for t in groupby(players, key=lambda p: p.team)]
 
-fight([player], [monster])
+fight(*teams)

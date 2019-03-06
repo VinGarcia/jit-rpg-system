@@ -18,6 +18,7 @@ class Character:
         self.weapons = [2+2*x for x in (weapons or [1]) if x in range(1, 5)]
         self.armor = armor
         self.stats = self.defaultStats()
+        self.team = kw.pop('team', 'players' if isPlayer else 'monsters')
 
     def attack(self):
         if self.stats['disabled']:
