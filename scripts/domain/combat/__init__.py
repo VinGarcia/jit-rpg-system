@@ -113,6 +113,6 @@ def overviewCmd(player, _players, teams, _args):
     return 'retry'
 
 def runCmd(player, _players, teams, _args):
-    teams.pop(player.team)
+    teams.pop(player['char'].team)
 
     return 'exit'
