@@ -141,9 +141,10 @@ class Character:
             12: '1d12',
         }
 
-        return '{\n  "name": "%s",\n  "attrs": %s,\n  "weapons": %s\n  "stats": %s\n}' % (
+        return '{\n  "name": "%s",\n  "attrs": %s,\n  "weapons": %s,\n  "armor": %s,\n  "stats": %s\n}' % (
             self.name,
             self.attrs,
             [weaponsStr[w] for w in self.weapons],
+            self.armor,
             self.stats,
         )
