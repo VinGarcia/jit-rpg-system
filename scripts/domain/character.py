@@ -24,26 +24,23 @@ class Character:
         if self.stats['disabled']:
             return {'hit_chance': 0, 'dmg': 0}
 
-        if dices:
-            if len(dices[1:]) != len(self.weapons):
-                raise Exception(
-                    'unexpected number of dices (%s), expected %s' % (
-                        dices,
-                        ['1d%s' % w for w in [20] + self.weapons],
-                    )
+        if dices == []:
+            dices.append(random.randint(1, 20))
+            for maxDmg in self.weapons:
+                dices.append(random.randint(1, maxDmg))
+
+        if len(dices[1:]) != len(self.weapons):
+            raise Exception(
+                'unexpected number of dices (%s), expected %s' % (
+                    dices,
+                    ['1d%s' % w for w in [20] + self.weapons],
                 )
+            )
 
-            return {
-                'hit_chance': int(dices[0]),
-                'dmg': sum([int(d) for d in dices[1:]]),
-            }
-
-        hit = random.randint(1,20)
-        dmg = 0
-        for maxDmg in self.weapons:
-            dmg += random.randint(1, maxDmg)
-
-        return {'hit_chance': hit, 'dmg': dmg}
+        return {
+            'hit_chance': dices[0],
+            'dmg': sum(dices[1:]),
+        }
 
     def defend(self, dmg, dodge=True):
         if dodge:

@@ -89,7 +89,10 @@ def hitCmd(player, players, _teams, args):
     oponent = players[args[0]]['char']
     print('Oponent chosen:', oponent)
 
-    attack = player['char'].attack(args[1:])
+    attack = player['char'].attack(
+        [int(dice) for dice in args[1:]]
+    )
+
     print('\nAttack:', attack)
     if attack['hit_chance'] >= 12:
         result = oponent.defend(attack['dmg'])
