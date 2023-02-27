@@ -57,7 +57,7 @@ One important detail is that different from D&D the charisma of a character
 is not a statistic, if you want to have a charismatic character show that
 on the role play!
 
-### Lucky - A Role Play Rewarding System
+### Luck - A Role Play Rewarding System
 
 Lucky points are an awesome feature of this system, each character can 
 collect Lucky Points by making the game fun, and the game master is 
